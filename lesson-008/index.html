@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<!--<body>-->
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+
+ACCORDION
+
+<div class="container">
+  <div class="accordion" id="myAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+          First chapter
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+           data-bs-parent="#myAccordion">
+        <div class="accordion-body">
+          Contents of the first chapter...
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+          The second chapter
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+           data-bs-parent="#myAccordion">
+        <div class="accordion-body">
+          The contents of the second chapter...
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-4">
+  <div class="accordion accordion-flush" id="myFlushAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flushHeadingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flushCollapseOne" aria-expanded="false" aria-controls="flushCollapseOne">
+          First chapter
+        </button>
+      </h2>
+      <div id="flushCollapseOne" class="accordion-collapse collapse" aria-labelledby="flushHeadingOne" data-bs-parent="#myFlushAccordion">
+        <div class="accordion-body">
+          Contents of the first chapter...
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flushHeadingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flushCollapseTwo" aria-expanded="false" aria-controls="flushCollapseTwo">
+          The second chapter
+        </button>
+      </h2>
+      <div id="flushCollapseTwo" class="accordion-collapse collapse" aria-labelledby="flushHeadingTwo" data-bs-parent="#myFlushAccordion">
+        <div class="accordion-body">
+          The contents of the second chapter...
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-4">
+  <div class="accordion" id="alwaysOpenAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne2">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne">
+          First chapter
+        </button>
+      </h2>
+      <div id="collapseOne2" class="accordion-collapse collapse show" aria-labelledby="headingOne2" data-bs-parent="#alwaysOpenAccordion">
+        <div class="accordion-body">
+          Contents of the first chapter...
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo">
+          The second chapter
+        </button>
+      </h2>
+      <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#alwaysOpenAccordion">
+        <div class="accordion-body">
+          The contents of the second chapter...
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+COLLAPSE
+
+<div class="container pt-4">
+  <div class="accordion" id="collapseExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne3">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne">
+          Section Three
+        </button>
+      </h2>
+      <div id="collapseOne3" class="accordion-collapse collapse show" aria-labelledby="headingOne3" data-bs-parent="#collapseExample">
+        <div class="accordion-body">
+          Contents of Section Three...
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo">
+          Section Four
+        </button>
+      </h2>
+      <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3" data-bs-parent="#collapseExample">
+        <div class="accordion-body">
+          Contents of Section Four...
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-4">
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+    Expand/Collapse
+  </button>
+  <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+    Expand/Collapse
+  </a>
+  <div class="collapse" id="collapseExample4">
+    <div class="card card-body">
+      Content that can be collapsed or expanded
+    </div>
+  </div>
+</div>
+
+
+OFFCANVAS
+
+<div class="container pt-4">
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    Open Offcanvas
+  </button>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      Content Offcanvas...
+    </div>
+  </div>
+</div>
+
+<div class="container pt-4">
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+    Open Offcanvas with Backdrop
+  </button>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with Backdrop</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      Content Offcanvas...
+    </div>
+  </div>
+
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNoBackdrop" aria-controls="offcanvasNoBackdrop">
+    Open Offcanvas without Backdrop
+  </button>
+  </button>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNoBackdrop" aria-labelledby="offcanvasNoBackdropLabel" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasNoBackdropLabel">Offcanvas without Backdrop</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      Content Offcanvas...
+    </div>
+  </div>
+</div>
+
+
+TOOLTIPS
+
+<div class="container pt-4">
+  <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="This is button">Point at me</button>
+</div>
+
+
+POPOVERS
+
+<div class="container pt-4">
+  <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Popover title" data-bs-content="And here is the content of the printed document!">
+    Point at me
+  </button>
+  <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+    Click to toggle popover
+  </button>
+  <button type="button" class="btn btn-primary" data-bs-toggle="popover3" data-bs-placement="top" title="Popover title" data-bs-content="And here is the content of the printed document!" data-bs-dismiss="popover">
+    Point at me
+  </button>
+  <a href="#" class="btn btn-primary" data-bs-toggle="popover4" data-bs-placement="left" title="Popover title" data-bs-content="And here is the content of the printed document!" data-bs-dismiss="popover" tabindex="0">
+    Point at me
+  </a>
+</div>
+
+
+SPINNERS
+
+<div class="container pt-4">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border spinner-border-lg" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-border text-danger" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <hr/>
+  <button class="btn btn-primary" type="button" disabled>
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    <span class="visually-hidden">Loading...</span>
+    Loading...
+  </button>
+  <hr/>
+  <div class="spinner-grow" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow spinner-grow-sm text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow spinner-grow-md text-danger" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+
+PROGRESS
+
+<div class="container pt-4">
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-animated" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+
+  <hr/>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="75%">75%</div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+      <span class="visually-hidden">90%</span>
+    </div>
+  </div>
+
+  <hr/>
+  <div class="progress">
+    <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+    <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+    <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+</div>
+
+
+SCROLLSPY
+
+<div class="container pt-4">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Chapter 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Chapter 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Chapter 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="section1" class="container">
+    <h2>Chapter 1</h2>
+    <p>Text of chapter 1...</p>
+  </div>
+  <div id="section2" class="container">
+    <h2>Chapter 2</h2>
+    <p>Text of chapter 2...</p>
+  </div>
+  <div id="section3" class="container">
+    <h2>Chapter 3</h2>
+    <p>Text of chapter 3...</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="list-group scrollspy position-fixed">
+        <a class="list-group-item list-group-item-action" href="#group1">Group 1</a>
+        <a class="list-group-item list-group-item-action" href="#group2">Group 2</a>
+        <a class="list-group-item list-group-item-action" href="#group3">Group 3</a>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div id="group1" class="py-5">
+        <h2>Group 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequuntur cumque dignissimos earum est ex fugiat illum molestias mollitia odio placeat, quam quia, quos sint, sunt totam. Dolores ex laudantium, qui quia ratione reiciendis sapiente vel veritatis. A asperiores autem blanditiis consectetur corporis culpa cum dicta doloribus eos est excepturi exercitationem fugit inventore ipsa laboriosam magni molestiae, mollitia nostrum omnis pariatur perferendis provident quis quisquam sed, similique sit suscipit tempore, temporibus ut vel vero voluptate voluptatem voluptatibus. Adipisci asperiores assumenda beatae cum debitis deserunt dignissimos dolor doloremque dolorum ea error explicabo in laborum libero modi molestias necessitatibus neque, obcaecati odit provident quae quaerat qui quo quod repellat similique ut voluptate. Alias assumenda corporis cumque doloribus fugiat harum illo iure minus mollitia nam natus nostrum numquam, quisquam sapiente tempore ut veniam voluptates? Ab at corporis hic molestias mollitia veritatis? Fugit laboriosam maiores quo ullam. Ab aliquam asperiores dolor eaque eius eum excepturi id impedit incidunt laudantium odio, perferendis praesentium provident quaerat quas repudiandae, sapiente sed sequi tenetur voluptatem. Ad alias aliquam beatae blanditiis consequuntur corporis cupiditate debitis deleniti dicta dignissimos doloremque esse eum fugit incidunt ipsa itaque laboriosam natus nemo non officiis pariatur quaerat ratione, repellat repellendus ullam vel voluptatum!</p>
+      </div>
+      <div id="group2" class="py-5">
+        <h2>Group 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores facilis id iure quod ratione totam velit. Ad beatae cum, doloremque impedit in iure magni nemo nulla odit perspiciatis quae quisquam repudiandae sint sit voluptas! Ab cupiditate laborum nam nihil numquam quos reiciendis? Atque fuga provident quod rem voluptatibus! Dicta dignissimos dolor fuga iure obcaecati. A ab at delectus, dolor, eos exercitationem natus odit porro, ratione repellendus sapiente similique unde voluptates! Aliquam architecto aut commodi earum id laboriosam magnam magni molestiae molestias nostrum, obcaecati quia quod rem reprehenderit tempora totam veritatis? Adipisci atque maxime nisi perferendis rerum. Accusamus blanditiis consectetur dignissimos eum facere fugiat fugit laboriosam laudantium magnam maxime nesciunt, nostrum odit pariatur porro quaerat recusandae totam voluptatem. Commodi ex exercitationem illum nobis perspiciatis! Natus quos sed vel. A accusamus aliquid aperiam beatae consectetur consequuntur, delectus dignissimos dolorum fugit illo iure labore modi, odio odit officiis optio placeat, porro praesentium repellendus repudiandae sint sit tempore voluptates. Cumque eaque eveniet quos repudiandae rerum soluta temporibus veritatis voluptas! Aspernatur beatae delectus dolorum et magni, neque quasi quod repellendus sit! Ipsum, nisi, soluta. Cumque harum incidunt iure quidem, rerum sapiente! At autem nobis quidem rem voluptate! Aliquam explicabo facere in iure, nemo perferendis velit!</p>
+      </div>
+      <div id="group3" class="py-5">
+        <h2>Group 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cum ducimus eaque eius id officiis quidem quisquam sapiente unde vero? Eaque magni quaerat tenetur vero. Alias assumenda commodi error illo inventore ipsum iste iusto magnam molestias, mollitia numquam recusandae rem repellendus sequi, vitae voluptas voluptatum. A ad aliquam aliquid at consectetur corporis cumque deleniti dolores esse expedita fuga in ipsa laudantium magnam natus nemo optio pariatur porro qui quisquam quos, recusandae sed ut vitae voluptatum? Accusamus aliquam aliquid beatae culpa delectus, hic ipsa, ipsum labore laboriosam modi natus, nihil nulla odio quis quo recusandae rem ullam. Accusantium aliquam amet dolor doloremque esse fugiat fugit id illum in magnam minus molestias mollitia nobis numquam provident quibusdam quod ratione, sapiente sint tenetur vero voluptate voluptatibus, voluptatum. Fugiat nostrum saepe vero. A animi architecto aspernatur, commodi culpa cum dicta dignissimos distinctio dolorum eaque error eum excepturi facere hic illo illum ipsum labore libero magni maxime minus modi neque nulla officia praesentium provident quia quo quod reiciendis repellendus rerum totam ut vel veniam veritatis vero voluptatem. Ab delectus dignissimos doloremque eligendi facilis illo ipsa itaque maiores minus molestias, obcaecati recusandae reiciendis rerum, sed sit tempora, tempore. Ad aliquid consequatur esse facilis quae quod temporibus!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cum ducimus eaque eius id officiis quidem quisquam sapiente unde vero? Eaque magni quaerat tenetur vero. Alias assumenda commodi error illo inventore ipsum iste iusto magnam molestias, mollitia numquam recusandae rem repellendus sequi, vitae voluptas voluptatum. A ad aliquam aliquid at consectetur corporis cumque deleniti dolores esse expedita fuga in ipsa laudantium magnam natus nemo optio pariatur porro qui quisquam quos, recusandae sed ut vitae voluptatum? Accusamus aliquam aliquid beatae culpa delectus, hic ipsa, ipsum labore laboriosam modi natus, nihil nulla odio quis quo recusandae rem ullam. Accusantium aliquam amet dolor doloremque esse fugiat fugit id illum in magnam minus molestias mollitia nobis numquam provident quibusdam quod ratione, sapiente sint tenetur vero voluptate voluptatibus, voluptatum. Fugiat nostrum saepe vero. A animi architecto aspernatur, commodi culpa cum dicta dignissimos distinctio dolorum eaque error eum excepturi facere hic illo illum ipsum labore libero magni maxime minus modi neque nulla officia praesentium provident quia quo quod reiciendis repellendus rerum totam ut vel veniam veritatis vero voluptatem. Ab delectus dignissimos doloremque eligendi facilis illo ipsa itaque maiores minus molestias, obcaecati recusandae reiciendis rerum, sed sit tempora, tempore. Ad aliquid consequatur esse facilis quae quod temporibus!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cum ducimus eaque eius id officiis quidem quisquam sapiente unde vero? Eaque magni quaerat tenetur vero. Alias assumenda commodi error illo inventore ipsum iste iusto magnam molestias, mollitia numquam recusandae rem repellendus sequi, vitae voluptas voluptatum. A ad aliquam aliquid at consectetur corporis cumque deleniti dolores esse expedita fuga in ipsa laudantium magnam natus nemo optio pariatur porro qui quisquam quos, recusandae sed ut vitae voluptatum? Accusamus aliquam aliquid beatae culpa delectus, hic ipsa, ipsum labore laboriosam modi natus, nihil nulla odio quis quo recusandae rem ullam. Accusantium aliquam amet dolor doloremque esse fugiat fugit id illum in magnam minus molestias mollitia nobis numquam provident quibusdam quod ratione, sapiente sint tenetur vero voluptate voluptatibus, voluptatum. Fugiat nostrum saepe vero. A animi architecto aspernatur, commodi culpa cum dicta dignissimos distinctio dolorum eaque error eum excepturi facere hic illo illum ipsum labore libero magni maxime minus modi neque nulla officia praesentium provident quia quo quod reiciendis repellendus rerum totam ut vel veniam veritatis vero voluptatem. Ab delectus dignissimos doloremque eligendi facilis illo ipsa itaque maiores minus molestias, obcaecati recusandae reiciendis rerum, sed sit tempora, tempore. Ad aliquid consequatur esse facilis quae quod temporibus!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cum ducimus eaque eius id officiis quidem quisquam sapiente unde vero? Eaque magni quaerat tenetur vero. Alias assumenda commodi error illo inventore ipsum iste iusto magnam molestias, mollitia numquam recusandae rem repellendus sequi, vitae voluptas voluptatum. A ad aliquam aliquid at consectetur corporis cumque deleniti dolores esse expedita fuga in ipsa laudantium magnam natus nemo optio pariatur porro qui quisquam quos, recusandae sed ut vitae voluptatum? Accusamus aliquam aliquid beatae culpa delectus, hic ipsa, ipsum labore laboriosam modi natus, nihil nulla odio quis quo recusandae rem ullam. Accusantium aliquam amet dolor doloremque esse fugiat fugit id illum in magnam minus molestias mollitia nobis numquam provident quibusdam quod ratione, sapiente sint tenetur vero voluptate voluptatibus, voluptatum. Fugiat nostrum saepe vero. A animi architecto aspernatur, commodi culpa cum dicta dignissimos distinctio dolorum eaque error eum excepturi facere hic illo illum ipsum labore libero magni maxime minus modi neque nulla officia praesentium provident quia quo quod reiciendis repellendus rerum totam ut vel veniam veritatis vero voluptatem. Ab delectus dignissimos doloremque eligendi facilis illo ipsa itaque maiores minus molestias, obcaecati recusandae reiciendis rerum, sed sit tempora, tempore. Ad aliquid consequatur esse facilis quae quod temporibus!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cum ducimus eaque eius id officiis quidem quisquam sapiente unde vero? Eaque magni quaerat tenetur vero. Alias assumenda commodi error illo inventore ipsum iste iusto magnam molestias, mollitia numquam recusandae rem repellendus sequi, vitae voluptas voluptatum. A ad aliquam aliquid at consectetur corporis cumque deleniti dolores esse expedita fuga in ipsa laudantium magnam natus nemo optio pariatur porro qui quisquam quos, recusandae sed ut vitae voluptatum? Accusamus aliquam aliquid beatae culpa delectus, hic ipsa, ipsum labore laboriosam modi natus, nihil nulla odio quis quo recusandae rem ullam. Accusantium aliquam amet dolor doloremque esse fugiat fugit id illum in magnam minus molestias mollitia nobis numquam provident quibusdam quod ratione, sapiente sint tenetur vero voluptate voluptatibus, voluptatum. Fugiat nostrum saepe vero. A animi architecto aspernatur, commodi culpa cum dicta dignissimos distinctio dolorum eaque error eum excepturi facere hic illo illum ipsum labore libero magni maxime minus modi neque nulla officia praesentium provident quia quo quod reiciendis repellendus rerum totam ut vel veniam veritatis vero voluptatem. Ab delectus dignissimos doloremque eligendi facilis illo ipsa itaque maiores minus molestias, obcaecati recusandae reiciendis rerum, sed sit tempora, tempore. Ad aliquid consequatur esse facilis quae quod temporibus!</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+
+</html>
