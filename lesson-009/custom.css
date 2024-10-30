@@ -1,0 +1,16 @@
+.btn {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #000FFF;
+}
+
+.text {
+  font-size: calc(1.425rem + 2.1vw);
+  padding: 1rem;
+}
+@media (min-width: 1200px) {
+  .text {
+    font-size: 3rem;
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */

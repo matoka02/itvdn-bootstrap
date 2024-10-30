@@ -1,0 +1,23 @@
+:root {
+    --custom-primary: #000fff;
+    --custom-primary-text: #000;
+    --custom-font-size: 20px;
+    --custom-font-weight: 700;
+    --custom-border-radius: 8px;
+}
+
+.btn {
+    --bs-btn-padding-y: var(--custom-font-size);
+    background-color: var(--custom-primary);
+}
+
+.text-light {
+    color: var(--custom-primary-text) !important;
+}
+
+.btn-custom {
+    background: var(--custom-primary);
+    color: var(--custom-primary-text);
+    border-radius: var(--custom-border-radius);
+    border: 1px solid var(--custom-primary)
+}

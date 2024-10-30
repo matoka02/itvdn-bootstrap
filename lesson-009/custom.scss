@@ -1,0 +1,19 @@
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/rfs/scss";
+@import "theme";
+
+$custom-color: rgba(0, 0, 0, 0.5);
+
+@mixin box-shadow($shadow) {
+  box-shadow: 0 0 10px $shadow;
+}
+
+.btn {
+  @include box-shadow($custom-color);
+  background-color: $custom-primary;
+}
+
+.text {
+  @include font-size(3rem);
+  @include padding(1rem);
+}
